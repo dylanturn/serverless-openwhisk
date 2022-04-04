@@ -35,7 +35,7 @@ module.exports = {
   },
 
   getTriggers(triggers) {
-    const feedMask = { feed: undefined };
+//    const feedMask = { feed: undefined };
     return Object.keys(triggers)
       .map(t => {
         const trigger = triggers[t];
@@ -49,7 +49,8 @@ module.exports = {
             },
           });
         }
-        return Object.assign(trigger, feedMask);
+        //return Object.assign(trigger, feedMask);
+        return trigger
       });
   },
 };
